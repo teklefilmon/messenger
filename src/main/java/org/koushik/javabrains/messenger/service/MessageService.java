@@ -6,7 +6,7 @@ import java.util.Map;
 
 import org.koushik.javabrains.messenger.database.DatabaseClass;
 import org.koushik.javabrains.messenger.model.Message;
-
+//@Service
 public class MessageService {
 
 	private Map<Long, Message> messages = DatabaseClass.getMessages();
@@ -18,7 +18,7 @@ public class MessageService {
 	
 	
 	public List<Message> getAllMessages() {
-		return new ArrayList<Message>(messages.values()); 
+		return new ArrayList<>(messages.values()); 
 	}
 	
 	public Message getMessage(long id) {
